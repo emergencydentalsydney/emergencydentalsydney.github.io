@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Space+Grotesk:wght@300;400;600&family=Work+Sans:wght@400;600&display=swap");
+body {
+font-family: 'Work Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6,
+.global-logo, .navbar-toggler {
+font-family: 'Space Grotesk', sans-serif;
+}
+/* ==========================================================================
+GUIDE
+===========================================================================
+WebP: Does not work on Safari 15. Only Big Sur+ will work.
+Must include <type="image/webp"> to make fallback working
+  <type="image/jpeg"> is correct one, <type="image/jpg"> does not work on Safari.
+      Responsive image treatment:
+      !Only use WebP for large desktop screen.
+      1. max-width: Mobile - Always @2x and JPG. Old iOS does not load WebP.
+      2. min-width: Large desktop - Use WebP for large image
+      3. <img>:     Fallback - Use high quality or @2x image. Only old browsers (and Safari) will load this.
+      ========================================================================== */
+      /* ==========================================================================
+      BOOTSTRAP GRID SYSTEM OVERRIDE
+      ===========================================================================
+      Default: Breakpoint  |  Content width
+      sm:         576px  |  540px
+      md:         768px  |  720px
+      lg:         992px  |  960px
+      xl:        1200px  |  1140px
+      xxl:       1400px  |  1320px
+      Add-on:
+      3xl:       1800px  |  1400px
+      4xl:       2500px  |  1600px
+      ========================================================================== */
+      /* BREAKPOINT - !! this variables does not replace BS default !! */
+      /* CONTENT WIDTH */
+      /* CUSTOM GUTTER */
+      .container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl, .row, .row > * {
+      --bs-gutter-x: 1.5rem;
+      /* MOBILE */
+      /* LARGE SCREEN */
+      }
+      @media only screen and (min-width: 992px) {
+      .container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl, .row, .row > * {
+      --bs-gutter-x: 2rem;
+      }
+      }
+      @media only screen and (min-width: 2400px) {
+      .container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl, .row, .row > * {
+      --bs-gutter-x: 2rem;
+      }
+      }
+      /* CONTAINER SIDE PADDING */
+      .container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+      padding-right: calc(var(--bs-gutter-x) * 1);
+      padding-left: calc(var(--bs-gutter-x) * 1);
+      }
+      /* CUSTOM CONTAINER WIDTH
+      ========================================================================== */
+      @media only screen and (min-width: 768px) {
+      .container, .container-sm, .container-md {
+      max-width: calc(720px + (var(--bs-gutter-x) * 2));
+      }
+      }
+      @media only screen and (min-width: 992px) {
+      .container, .container-sm, .container-md, .container-lg {
+      max-width: calc(960px + (var(--bs-gutter-x) * 2));
+      }
+      }
+      @media only screen and (min-width: 1200px) {
+      .container, .container-sm, .container-md, .container-lg, .container-xl {
+      max-width: calc(1140px + (var(--bs-gutter-x) * 2));
+      }
+      }
+      @media only screen and (min-width: 1400px) {
+      .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+      max-width: calc(1140px + (var(--bs-gutter-x) * 2));
+      }
+      }
+      @media only screen and (min-width: 1800px) {
+      .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+      max-width: calc(1140px + (var(--bs-gutter-x) * 2));
+      }
+      }
+      @media only screen and (min-width: 2400px) {
+      .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+      max-width: calc(1140px + (var(--bs-gutter-x) * 2));
+      }
+      }
+      /* ==========================================================================
+      SCAFFOLDING
+      ========================================================================== */
+      html, body {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      }
+      .clearfix::after {
+      content: " ";
+      clear: both;
+      display: table;
+      }
+      .page-content {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      }
+      /* ==========================================================================
+      FOOTER
+      ========================================================================== */
+      .globalFooter__nav {
+      display: block;
+      width: 100%;
+      text-align: center;
+      }
+      .globalFooter .socialLink__item {
+      display: inline-block;
+      }
+      @media only screen and (min-width: 992px) {
+      .globalFooter__nav {
+      display: flex;
+      margin: -0.5rem;
+      width: auto;
+      }
+      }
+      .footer-menu * {
+      text-align: center;
+      }
+      /* ==========================================================================
+      HEADER
+      ========================================================================== */
+      .navbar-brand {
+      text-transform: uppercase;
+      }
+      .navbar-brand strong {
+      font-weight: 400;
+      }
+      .navbar-toggler {
+      border: 0;
+      }
+      .navbar-toggler:focus,
+      .btn-close:focus {
+      box-shadow: none;
+      }
+      .navbar-nav .nav-link {
+      color: #000;
+      position: relative;
+      }
+      .navbar-nav .nav-item[data-active-item="active"] .nav-link::after {
+      display: none;
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 4px;
+      width: 100%;
+      height: 1px;
+      background-color: #CCC;
+      }
+      /* ==========================================================================
+      HOME
+      ========================================================================== */
+      .home-hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 540px;
+      }
+      .home-hero__text-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #FFF;
+      max-width: 66.66666667%;
+      margin: auto;
+      }
+      .home-hero__background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      }
+      .home-hero__background__inner {
+      width: 100%;
+      height: 100%;
+      }
+      .home-hero__background img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -o-object-fit: cover;
+         object-fit: cover;
+      height: 100%;
+      }
+      /* ==========================================================================
+      FAQ
+      ========================================================================== */
+      .accordion-heading {
+      margin-top: 32px;
+      margin-bottom: 16px;
+      }
