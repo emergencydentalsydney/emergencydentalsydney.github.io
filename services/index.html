@@ -29,12 +29,12 @@
       {"@context":"https://schema.org","@type":"WebPage","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","headline":"7 Days Family Dentistry","url":"https://emergencydentalsydney.com.au/services/"}
     </script>
     <!-- End Jekyll SEO tag -->
-    <meta property="og:image" content="https://emergencydentalsydney.com.au/assets/brand/thumbnail.png">
+    <meta property="og:image" content="/assets/images/eds-home-banner-05.jpg">
     <link rel="apple-touch-icon" href="https://emergencydentalsydney.com.au/assets/brand/apple-touch-icon.png">
     <link rel="shortcut icon" href="https://emergencydentalsydney.com.au/assets/brand/favicon.png">
     <!-- Style -->
     <link rel="stylesheet" href="../assets/styles/bootstrap.min.css?v=5.2.2">
-    <link rel="stylesheet" href="../assets/styles/style.css?v=1671593471">
+    <link rel="stylesheet" href="../assets/styles/style.css?v=1673704400">
     <meta name="robots" content="noindex, nofollow"><!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
     <script>
@@ -59,7 +59,7 @@
       <!-- Logo -->
       <div class="navbar-header">
         <a class="navbar-brand" href="https://emergencydentalsydney.com.au">
-          <!-- <img class="navbar-brand-logo" src="../assets/brand/logo.png?v1671593471" width="120" height="" alt="Emergency Dental Sydney"> -->
+          <!-- <img class="navbar-brand-logo" src="../assets/brand/logo.png?v1673704400" width="120" height="" alt="Emergency Dental Sydney"> -->
           <strong>Emergency Dental Sydney</strong>
         </a>
       </div>
@@ -77,11 +77,12 @@
         <!-- /.offcanvas-header -->
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1">
-            <li class="nav-item" ><a class="nav-link" href="/about-us/">24/7 After Hours Dental Care</a></li>
+            <li class="nav-item" ><a class="nav-link" href="/">24/7 After Hours Dental Care</a></li>
             <li class="nav-item"  data-active-item="active" ><a class="nav-link" href="/services/">7 Days Family Dentistry</a></li>
             <li class="nav-item" ><a class="nav-link" href="/support/">Guide &amp; Tips</a></li>
-            <li class="nav-item" ><a class="nav-link" href="/contact/">Contact</a></li>
+            <li class="nav-item" ><a class="nav-link" href="/contact/">Contact us</a></li>
           </ul>
+          <!-- <a class="nav-link booking" href="tel:+61416268368">Book Now</a> -->
         </div>
         <!-- /.offcanvas-body -->
       </nav><!-- /.offcanvas -->
@@ -98,11 +99,14 @@
     <main id="main" class="main">
       <div class="page-header">
         <div class="py-5 bg-light">
-          <div class="page-banner-text ">
+          <div class="page-banner-text text-white py-5">
             <div class="container py-5">
               <h1 class="display-5 fw-bold"> 7 Days Family Dentistry </h1>
             </div>
           </div>
+          <figure class="page-banner-background">
+            <img src="/assets/images/eds-home-banner-05.jpg" width=" 100%"alt=" 7 Days Family Dentistry ">
+          </figure>
         </div>
         <style>
           .page-header {
@@ -117,6 +121,7 @@
             position: absolute;
             top: 0; right: 0; bottom: 0; left: 0;
             z-index: 0;
+            margin-bottom: 0;
           }
           .page-banner-background img {
             width: 100%;
@@ -165,33 +170,19 @@
     </main><!-- /#master-wrap -->
   </div>
   <!-- /#master-wrap -->
-  <div class="container footer-menu">
-    <hr>
-    <div class="row">
-      <div class="col-md-3">
-        <p>24/7 EMERGENCY DENTAL CARE</p>
-      </div>
-      <div class="col-md-3">
-        <p>7 DAYS FAMILY DENTISTRY</p>
-      </div>
-      <div class="col-md-3">
-        <p>FIND US</p>
-      </div>
-      <div class="col-md-3">
-        <p>BOOK NOW</p>
-      </div>
-    </div>
-  </div>
   <footer id="globalFooter" class="globalFooter py-5 ma-5">
     <div class="globalFooter__container container">
       <div class="row">
         <div class="col-12">
-          <ul class="nav globalFooter__nav">
-            <li class="nav-item"><a class="nav-link px-2 text-muted" href="/terms/" >Terms &amp; Conditions</a></li>
-            <li class="nav-item"><a class="nav-link px-2 text-muted" href="/privacy/" >Privacy</a></li>
-            <li class="nav-item"><a class="nav-link px-2 text-muted" href="/contact/" >Contact</a></li>
-            <li class="nav-item"><a class="nav-link px-2 text-muted" href="/booking/" >Book Now</a></li>
-          </ul>
+          <div class="footer-menu">
+            <ul class="nav globalFooter__nav">
+              <li class="nav-item"><a class="nav-link px-2" href="/" >24/7 After Hours Dental Care</a></li>
+              <li class="nav-item"><a class="nav-link px-2" href="/services/"  data-active-item="active" >7 Days Family Dentistry</a></li>
+              <li class="nav-item"><a class="nav-link px-2" href="/terms/" >Terms &amp; Conditions</a></li>
+              <li class="nav-item"><a class="nav-link px-2" href="/support/" >Guide &amp; Tips</a></li>
+              <li class="nav-item"><a class="nav-link px-2" href="/contact/" >Contact us</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <!-- /.row -->
@@ -211,7 +202,10 @@
               1st Floor 260-262 Beamish St. Campsie NSW 2194.<br>
               Ph: 02 9267 7174
             </address>
-            <p class="site-copyright py-4">Copyright &copy; 2022 Emergency Dental Sydney<span>, All rights reserved.</span></p>
+            <a class="footer-logo" href="https://emergencydentalsydney.com.au">Emergency Dental Sydney</a>
+            <p class="site-copyright">Copyright &copy; <script>
+                document.write(/\d{4}/.exec(Date())[0])
+              </script> Emergency Dental Sydney<span>, All rights reserved.</span></p>
           </div>
           <div class="globalFooter__backTop col-lg-4 text-center text-lg-end">
             <a href="#top">
@@ -238,6 +232,6 @@
   <!-- Lazyload -->
   <script src="../assets/scripts/vendor/lazyload.min.js" type="text/javascript" charset="utf-8"></script>
   <!-- Custom Script -->
-  <script src="../assets/scripts/main.js?v1671593471" type="text/javascript" charset="utf-8"></script>
+  <script src="../assets/scripts/main.js?v1673704400" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

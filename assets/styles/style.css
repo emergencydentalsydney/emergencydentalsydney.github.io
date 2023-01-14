@@ -123,6 +123,40 @@ Must include <type="image/webp"> to make fallback working
       .footer-menu * {
       text-align: center;
       }
+      .globalFooter {
+      background: #191919;
+      }
+      .globalFooter .border-top {
+      border-top-color: #AFABA1 !important;
+      }
+      .globalFooter__nav .nav-link {
+      color: #FFF;
+      }
+      .globalFooter__nav .nav-link:hover {
+      color: #FFF;
+      }
+      .globalFooter address {
+      color: #CCC;
+      }
+      .globalFooter address strong {
+      color: #FFF;
+      }
+      .globalFooter .site-copyright {
+      color: #FFF;
+      font-size: 14px;
+      }
+      .globalFooter__backTop a {
+      color: #CCC;
+      }
+      .globalFooter .footer-logo {
+      color: #FFF;
+      display: inline-block;
+      font-size: 1.25rem;
+      font-weight: 400;
+      margin-top: 28px;
+      text-decoration: none;
+      text-transform: uppercase;
+      }
       /* ==========================================================================
       HEADER
       ========================================================================== */
@@ -143,15 +177,37 @@ Must include <type="image/webp"> to make fallback working
       color: #000;
       position: relative;
       }
-      .navbar-nav .nav-item[data-active-item="active"] .nav-link::after {
-      display: none;
+      .navbar-nav .nav-item[data-active-item="active"] .nav-link {
+      font-weight: 600;
+      }
+      .navbar-nav .nav-item:last-child a {
+      border: 1px solid;
+      padding: 5px 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 0;
+      }
+      @media only screen and (min-width: 1200px) {
+      .navbar-nav .nav-item:last-child a {
+      margin: 3px 10px;
+      }
+      }
+      .navbar-nav .nav-item:last-child a::after {
+      content: "Book Now ";
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 600;
+      }
+      .navbar-nav .nav-item:last-child a::before {
       content: "";
-      position: absolute;
-      left: 0;
-      bottom: 4px;
-      width: 100%;
-      height: 1px;
-      background-color: #CCC;
+      position: relative;
+      top: 3px;
+      margin-right: 6px;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background: url(../images/icons/telephone.svg) center center no-repeat;
+      background-size: cover;
       }
       /* ==========================================================================
       HOME
